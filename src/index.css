@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+body {
+  font-family: poppins;
+}
+
+@layer base {
+  .container {
+    @apply w-full px-4 sm:px-8 md:px-20 lg:px-40 ;
+  }
+  .flex-center {
+    @apply flex items-center justify-center ;
+  }
+  .box-md {
+    @apply rounded-xl border shadow-md w-72 ;
+  }
+  .box-sm {
+    @apply rounded-xl border shadow-md w-60 ;
+  }
+  .box-lg {
+    @apply rounded-xl border shadow-md w-96 ;
+  }
+  .box-cntnt {
+    @apply p-4 text-xs;
+  }
+  .box-ttl {
+    @apply font-semibold text-base p-4 ;
+    p {
+      @apply text-xs font-normal;
+    }
+  }
+
+  .btn{
+    @apply px-3 py-2 rounded-md bg-black text-white
+  }
+}
