@@ -1,12 +1,13 @@
 import react from '../assets/logo-react.png'
 import { FaGithub } from 'react-icons/fa'
+import DarkMode from '../components/DarkMode'
 const Index = () => {
   const cardContent = [
     {
       id :1, 
-      ttl : 'Card components',
-      hglt : 'build in components',
-      cntnt : 'this feature is make you easier to make card like product card',
+      ttl : 'Fullstack Friendly',
+      hglt : 'build in Firebase database',
+      cntnt : 'this feature is make you easier to make connection with firebase',
       btn : 'explore card',
     },
     {
@@ -25,28 +26,28 @@ const Index = () => {
     },
   ]
   return (
-    <div className="h-screen w-full text-sm flex-center">
-      <div className="flex-center min-h-screen py-20 container flex-col text-lg justify-between">
-        <div className='flex-center'>
-          <div className="box-ttl shadow-none box-md">
-            <h1>ReaViTesex</h1>
-            <p>version 1.0.0</p>
-          </div>
-          <div className="box-ttl box-md opacity-0"></div>
-          <div className="box-ttl box-md opacity-0"></div>
-        </div>
-        <div className="flex-center flex-col">
+    <div className="h-screen w-full text-sm flex justify-center bg-white">
+      <div className="flex-center min-h-screen container flex-col text-lg justify-between">
+        <div className="flex-center text-xs flex-col min-h-screen">
           <img src={react} alt="" className='w-40 grayscale'/>
           <h1 className='font-bold typewriter text-3xl'><span className=''>React</span> + Vite</h1>
+          <p className='text-sm w-full max-w-2xl text-center'>
+            this is still react vite that u know before, i just make u easier to devolope react app, 
+            such as build in react-router-app, react-icons, and little bit common components
+          </p>
+          <div className="flex gap-2 mt-2">
+            <button className="box px-3 py-2 bg-black text-white">read document</button>
+            <button className="box px-3 py-2 bg-black text-white">read document</button>
+          </div>
           <p className='text-sm mt-4'>modified by : <span className=''>flipSOsigma</span></p>
           <a href='https://github.com/flipSOsigma' className="flex-center gap-1 text-sm">
             <FaGithub/>
             https://github.com/flipSOsigma
           </a>
         </div>
-        <div className="flex-center items-start gap-4 mt-8">
+        <div className="flex-center flex-col w-full sm:flex-row items-start gap-4 mt-8">
           { cardContent?.map((doc) => (
-            <div key={doc.id} className="box-md text-sm flex flex-col">
+            <div key={doc.id} className="w-full box-full text-sm flex flex-col">
               <div className="box-ttl">
                 <h1>{doc.ttl}</h1>
                 <p>{doc.hglt}</p>

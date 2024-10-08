@@ -9,12 +9,15 @@ body {
 }
 
 @layer base {
+  /*  */
   .container {
     @apply w-full px-4 sm:px-8 md:px-20 lg:px-40 ;
   }
   .flex-center {
     @apply flex items-center justify-center ;
   }
+
+  /* card size */
   .box-md {
     @apply rounded-xl border shadow-md w-72 ;
   }
@@ -24,6 +27,14 @@ body {
   .box-lg {
     @apply rounded-xl border shadow-md w-96 ;
   }
+  .box-full {
+    @apply rounded-xl border shadow-md w-full ;
+  }
+  .box {
+    @apply rounded-lg border shadow-md;
+  }
+
+  /* card content */
   .box-cntnt {
     @apply p-4 text-xs;
   }
@@ -34,6 +45,7 @@ body {
     }
   }
 
+  /* other section */
   .btn{
     @apply px-3 py-2 rounded-md bg-black text-white
   }
