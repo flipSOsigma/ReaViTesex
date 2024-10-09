@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 
 body {
@@ -16,37 +17,7 @@ body {
   .flex-center {
     @apply flex items-center justify-center ;
   }
-
-  /* card size */
-  .box-md {
-    @apply rounded-xl border shadow-md w-72 ;
-  }
-  .box-sm {
-    @apply rounded-xl border shadow-md w-60 ;
-  }
-  .box-lg {
-    @apply rounded-xl border shadow-md w-96 ;
-  }
-  .box-full {
-    @apply rounded-xl border shadow-md w-full ;
-  }
-  .box {
-    @apply rounded-lg border shadow-md;
-  }
-
-  /* card content */
-  .box-cntnt {
-    @apply p-4 text-xs;
-  }
-  .box-ttl {
-    @apply font-semibold text-base p-4 ;
-    p {
-      @apply text-xs font-normal;
-    }
-  }
-
-  /* other section */
-  .btn{
-    @apply px-3 py-2 rounded-md bg-black text-white
+  .neo {
+    @apply hover:translate-x-[0.25rem] hover:translate-y-[0.25rem] hover:shadow-[0rem_0rem_0px_0px_rgba(0,0,0,1)] shadow-[0.25rem_0.25rem_0px_0px_rgba(0,0,0,1)]
   }
 }
