@@ -18,6 +18,9 @@ body {
     @apply flex items-center justify-center ;
   }
   .neo {
-    @apply hover:translate-x-[0.25rem] hover:translate-y-[0.25rem] hover:shadow-[0rem_0rem_0px_0px_rgba(0,0,0,1)] shadow-[0.25rem_0.25rem_0px_0px_rgba(0,0,0,1)]
+    @apply hover:translate-x-[0.25rem] hover:translate-y-[0.25rem] hover:shadow-[0rem_0rem_0px_0px_rgba(0,0,0,1)] shadow-[0.25rem_0.25rem_0px_0px_rgba(0,0,0,1)] px-3 py-2 duration-150 border border-black
+  }
+  hr {
+    @apply border-t border-black w-full
   }
 }
